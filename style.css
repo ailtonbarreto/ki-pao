@@ -200,6 +200,10 @@ header {
     img{
         width: 80%;
     }
+
+    a{
+        text-align: center;
+    }
 }
 
 

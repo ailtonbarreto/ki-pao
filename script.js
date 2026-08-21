@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ${item.imagem ? `
                     <div class="card-img">
-                        <img src="${item.imagem}" alt="${item.nome}" loading="lazy">
+                        <img src="${item.imagem}" loading="lazy">
                     </div>
                 ` : ''}
 
