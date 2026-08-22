@@ -86,7 +86,6 @@ header {
     border: none;
     padding: 8px 12px;
     border-radius: 8px;
-    cursor: pointer;
     background-color: transparent;
     color: var(--color-text);
     width: 90%;
@@ -101,6 +100,7 @@ header {
 .btn-fechar .btn-x {
     font-size: 30px;
     line-height: 1;
+    cursor: pointer;
 
 }
 
@@ -194,8 +194,13 @@ header {
     align-items: center;
     width: 85%;
     position: absolute;
-    bottom: 4vw;
+    bottom: 40vh;
     padding: 0;
+
+    p{
+        color: var(--color-text);
+        margin-bottom: 1.5rem;
+    }
 
     img{
         width: 80%;

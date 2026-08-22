@@ -77,11 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 carregarCategoria(cat);
                 sidebar.classList.remove('open');
 
+                window.scrollTo({ top: 0, behavior: "smooth" });
+
             });
 
             menuCategorias.appendChild(btn);
 
-            // Carrega automaticamente a primeira categoria
             if (index === 0) {
                 carregarCategoria(cat);
             }
@@ -92,10 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function carregarCategoria(categoria) {
 
-        // Atualiza o título da categoria
         title.textContent = categoria;
 
-        // Limpa os cards atuais
         cards.innerHTML = '';
 
         dadosPorCategoria[categoria].forEach(item => {
@@ -122,15 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div class="card-info">
 
-
-
                     <p>${item.descricao || ''}</p>
-
 
                 </div>
             `;
-
-
 
             cards.appendChild(card);
 
